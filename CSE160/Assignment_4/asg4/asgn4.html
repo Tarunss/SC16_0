@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Change a point color</title>
+</head>
+
+<body onload="main()">
+  <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+  </canvas>
+  <br><br>
+  <p id="numdot"> XXX</p>
+  <button type="button" id="animationOn">AnimationOn</button>
+  <button type="button" id="animationOff">AnimationOff</button>
+
+
+  <br><br>
+
+  CameraAngleX <input type="range" min="0" max="360" value="5" class="slider" id="angleSlideX">
+  CameraAngleY <input type="range" min="0" max="360" value="0" class="slider" id="angleSlideY">
+  <br><br>
+  RightArmSlider <input type="range" min="0" max="55" value="0" class="slider" id="rightArmSlider">
+  RightForearmSlider<input type="range" min="0" max="55" value="0" class="slider" id="rightForearmSlider">
+  LeftArmSlider <input type="range" min="0" max="55" value="0" class="slider" id="leftArmSlider">
+  LeftForearmSlider<input type="range" min="0" max="55" value="0" class="slider" id="leftForearmSlider">
+  RightLegSlider <input type="range" min="0" max="30" value="0" class="slider" id="rightLegSlider">
+  LeftLegSlider<input type="range" min="0" max="30" value="0" class="slider" id="leftLegSlider">
+  <p>
+    Normal: <button type="button" id="normalOn">Normal On</button>
+    <button type="button" id="normalOff">Normal Off</button>
+  <p>
+  <p>
+    Light X <input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideX">
+    Light Y <input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideY">
+    Light Z <input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideZ">
+  <p>
+  <p>
+    Light: <button type="button" id="lightOn">Light On</button>
+    <button type="button" id="lightOff">Light Off</button>
+  <p>
+    <!-- Number Of Segments <input type="range" min="3" max="30" value="10" class="slider" id="segSlide"> -->
+
+
+
+    <script src="Camera.js"></script>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="asg4.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Octagon.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Sphere.js"></script>
+</body>
+
+</html>
